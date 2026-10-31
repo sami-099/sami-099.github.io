@@ -71,7 +71,7 @@ main { display: flex; flex-direction: column; gap: 72px; }
   font-family: var(--mono);
   font-size: 15px;
 }
-/* logo: cycles 0x63 -> xcix -> pixel 99 */
+/* logo: cycles 0x63 -> xcix -> 99 -> 1100011 */
 .logo {
   --logo-front: var(--text);   /* main color */
   --logo-shadow: #4C566A;      /* depth layer (nord3) */
@@ -87,14 +87,15 @@ main { display: flex; flex-direction: column; gap: 72px; }
   width: auto;
   display: block;
   opacity: 0;
-  animation: logo-cycle 9s infinite;
+  animation: logo-cycle 12s infinite;
 }
 .logo .px-front { fill: var(--logo-front); }
 .logo .px-back  { fill: var(--logo-shadow); transition: fill .15s; }
 
 .logo-hex   { animation-delay: 0s; }
-.logo-roman { animation-delay: -6s; }
-.logo-pixel { animation-delay: -3s; }
+.logo-roman { animation-delay: -9s; }
+.logo-pixel { animation-delay: -6s; }
+.logo-bin   { animation-delay: -3s; }
 
 .logo:hover .logo-item { animation-play-state: paused; }
 .logo:hover { --logo-shadow: var(--accent); }
@@ -103,8 +104,8 @@ main { display: flex; flex-direction: column; gap: 72px; }
   0%     { opacity: 0; transform: translateX(-3px); }
   2%     { opacity: 1; transform: translateX(2px); }
   4%     { transform: translateX(0); }
-  30%    { opacity: 1; }
-  33.33% { opacity: 0; }
+  22%    { opacity: 1; }
+  25%    { opacity: 0; }
   100%   { opacity: 0; }
 }
 .cursor-blink { color: var(--accent); animation: blink 1.1s steps(1) infinite; }
