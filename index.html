@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Your Name]</title>
+  <meta name="description" content="[Your Name] — cloud and platform engineering, IaC, and infrastructure for AI agents.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="site-header">
+      <a class="logo" href="./">~/[username]<span class="cursor-blink">_</span></a>
+      <nav class="nav" aria-label="Main">
+        <a href="#about">about</a>
+        <a href="#projects">projects</a>
+        <a href="#writing">writing</a>
+        <a href="https://github.com/[username]">github</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ABOUT -->
+      <section id="about" class="hero">
+        <div class="hero-text">
+          <span class="prompt"><span class="pink">$</span> whoami</span>
+          <h1>[Your Name]</h1>
+          <p class="lede">[One or two lines about you. e.g. Systems administrator moving into cloud and platform engineering, learning infrastructure by deploying AI agents.]</p>
+        </div>
+
+        <div class="terminal" aria-label="Current focus">
+          <span class="dim small">~</span>
+          <span><span class="pink">❯</span> cat now.md</span>
+          <dl class="now">
+            <div><dt>focus</dt><dd>cloud · devops · platform · ai infra</dd></div>
+            <div><dt>learning</dt><dd>[topic]</dd></div>
+            <div><dt>building</dt><dd>[project]</dd></div>
+          </dl>
+          <span class="dim small spaced">~</span>
+          <span><span class="pink">❯</span> <span class="caret" aria-hidden="true"></span></span>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects">
+        <h2 class="section-title"><span class="pink">##</span> projects</h2>
+
+        <article class="project">
+          <div class="project-body">
+            <h3>[Project name]</h3>
+            <p>[What it does and why you built it, in one sentence.]</p>
+            <span class="tags">[language] · [tool]</span>
+          </div>
+          <a class="repo-link" href="#">repo →</a>
+        </article>
+
+        <article class="project">
+          <div class="project-body">
+            <h3>[Project name]</h3>
+            <p>[What it does and why you built it, in one sentence.]</p>
+            <span class="tags">[language] · [tool]</span>
+          </div>
+          <a class="repo-link" href="#">repo →</a>
+        </article>
+
+        <article class="project">
+          <div class="project-body">
+            <h3>[Project name]</h3>
+            <p>[What it does and why you built it, in one sentence.]</p>
+            <span class="tags">[language] · [tool]</span>
+          </div>
+          <a class="repo-link" href="#">repo →</a>
+        </article>
+      </section>
+
+      <!-- WRITING -->
+      <section id="writing">
+        <h2 class="section-title"><span class="pink">##</span> writing</h2>
+        <ul class="posts">
+          <li><a href="#"><time datetime="">[YYYY-MM-DD]</time><span class="post-title">[Post title — e.g. how I built project X]</span></a></li>
+          <li><a href="#"><time datetime="">[YYYY-MM-DD]</time><span class="post-title">[Post title]</span></a></li>
+          <li><a href="#"><time datetime="">[YYYY-MM-DD]</time><span class="post-title">[Post title]</span></a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year">2026</span> [Your Name]</span>
+      <div class="footer-links">
+        <a href="https://github.com/[username]">github.com/[username]</a>
+        <a href="#">linkedin</a>
+      </div>
+    </footer>
+
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
